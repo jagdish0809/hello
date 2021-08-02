@@ -9,11 +9,12 @@
 
     <script>
         function hello() {
-            if (document.querySelector('h1').innerHTML === 'hello world'){
-                document.querySelector('h1').innerHTML = 'Goodbye!';
+            const heading = document.querySelector('h1');
+            if(heading.innerHTML === 'hello world'){
+                heading.innerHTML = 'Goodbye!';
             }
             else{
-                document.querySelector('h1').innerHTML = 'hello world';
+                heading.innerHTML = 'hello world';
             }
         }
     </script>
